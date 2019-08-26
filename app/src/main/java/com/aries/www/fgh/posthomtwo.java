@@ -409,7 +409,10 @@ public class posthomtwo extends AppCompatActivity {
                 if (resultCode == RESULT_OK && data != null && data.getData() != null) {
 
                     path = data.getData();
-                    uploadpdffile(path);
+                    dekho.setImageResource(R.drawable.filetypes);
+                    dekho.setVisibility(View.VISIBLE);
+                    mrecyclerview.setVisibility(View.GONE);
+                    posthomtwo.this.checkm=3;
 
                     break;
                 }
@@ -514,7 +517,7 @@ public class posthomtwo extends AppCompatActivity {
 
     }
 
-    private void uploadpdffile(final Uri data) {
+    private void uploadpdffile(final Uri data, final String title) {
 
 
         final ProgressDialog progressDialog = new ProgressDialog(this);
@@ -537,7 +540,9 @@ public class posthomtwo extends AppCompatActivity {
                 String datem =  SimpleDateFormat.getDateTimeInstance().format(date);
                 dpd  object = new dpd(filename,url.toString(),datem);
                 myref.child("pdfn").push().setValue(object);
-                String timeStamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+                text obj = new text(title, datem);
+                texref.push().setValue(obj);
+
 
 
                 String uploadpdfid =myref.push().getKey();
@@ -546,7 +551,10 @@ public class posthomtwo extends AppCompatActivity {
                 Toast.makeText(posthomtwo.this,"File uploaded",Toast.LENGTH_SHORT).show();
                 notification();
                 progressDialog.dismiss();
+                dekho.setVisibility(View.GONE);
+                mrecyclerview.setVisibility(View.VISIBLE);
                 startActivity(new Intent(posthomtwo.this,pdfshow.class));
+
 
             }
         }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
@@ -554,6 +562,8 @@ public class posthomtwo extends AppCompatActivity {
             public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
                 double progress = (100.0*taskSnapshot.getBytesTransferred())/taskSnapshot.getTotalByteCount();
                 progressDialog.setMessage("uploaded"+(int)progress+"%");
+                dekho.setVisibility(View.GONE);
+                mrecyclerview.setVisibility(View.VISIBLE);
 
             }
         });
@@ -794,6 +804,8 @@ public class posthomtwo extends AppCompatActivity {
                 uploadimage(imageuri, post);
             } else if (checkm == 2)
                 uploadimagetwo(camerauri, post);
+            else if(checkm==3)
+                uploadpdffile(path,post);
         }
         else {
 
