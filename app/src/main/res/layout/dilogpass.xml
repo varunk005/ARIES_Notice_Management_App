@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/you"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+android:layout_marginTop="30dp"
+        android:paddingStart="20dp"
+        android:text="Check Your Inbox for Password reset link"
+        android:textColor="#194553"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+       />
+
+    <Button
+        android:id="@+id/dilogbtnpass"
+
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:background="#ff4e4e"
+        android:text="x"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+       />
+
+</LinearLayout>

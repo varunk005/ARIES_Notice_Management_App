@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "418211502940",
+    "firebase_url": "https://backar-484ad.firebaseio.com",
+    "project_id": "backar-484ad",
+    "storage_bucket": "backar-484ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418211502940:android:5b6bce460b465474",
+        "android_client_info": {
+          "package_name": "com.aries.www.fgh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "418211502940-a6nj35f73vjdre2hejnh7arj3qmbcrev.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aries.www.fgh",
+            "certificate_hash": "0698938e80f30197380c4464289a6c06be88917f"
+          }
+        },
+        {
+          "client_id": "418211502940-sllg64ngppf7upo7d9sdefqsivq0b7ah.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiQeicEQfcgNJq0FmtQkZZdCI_lBGDwlo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "418211502940-sllg64ngppf7upo7d9sdefqsivq0b7ah.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

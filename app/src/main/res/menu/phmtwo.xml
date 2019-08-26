@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <item android:id="@+id/logoutmenutwo"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="LogOut"/>
+    <item android:id="@+id/viewpdftwo"
+        app:showAsAction="never"
+        android:title="V/E File"
+        />
+    <item android:id="@+id/viewgallerytwo"
+        app:showAsAction="never"
+        android:title="V/E Post"
+
+        />
+    <item android:id="@+id/newustwo"
+        app:showAsAction="never"
+        android:title="New User"
+        />
+    <item android:id="@+id/profiletwo"
+        app:showAsAction="never"
+        android:title="Profile"
+        />
+
+    <item
+        android:icon="@drawable/camera"
+        android:title="camera"
+        app:showAsAction="always"
+        android:iconTint="#fff"
+        android:checkable="true"
+        android:id="@+id/cameratwo"/>
+
+
+    <item
+        android:icon="@drawable/stack"
+        android:title="gallery"
+        app:showAsAction="always"
+        android:iconTint="#fff"
+        android:checkable="true"
+        android:id="@+id/gallerytwo"/>
+
+
+    <item
+        android:icon="@drawable/pp"
+        android:title="file"
+        android:checkable="true"
+        app:showAsAction="always"
+
+        android:id="@+id/filetwo"/>
+
+</menu>
