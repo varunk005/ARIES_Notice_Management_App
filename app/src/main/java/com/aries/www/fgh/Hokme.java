@@ -62,7 +62,7 @@ da= findViewById(R.id.mnadmin);
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.blop);
         mp.start();
         String p = da.getText().toString().trim();
-        if(p.equals("adsahu")){
+        if(p.equals("")){                                                   //password
             startActivity(new Intent(Hokme.this,posthomtwo.class));
 
         }
